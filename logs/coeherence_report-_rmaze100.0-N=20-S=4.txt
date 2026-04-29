@@ -1,0 +1,606 @@
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 1
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 197 cells
+F* density: 98.5%
+Max density: 5.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0000
+  Median D(s): 0.0000
+  Std D(s):    0.0000
+  Max D(s):    0.0000
+  States with D(s) > mean + 2*std (0.0000): 0
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 2
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 193 cells
+F* density: 96.5%
+Max density: 10.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0010
+  Median D(s): 0.0000
+  Std D(s):    0.0138
+  Max D(s):    0.1927
+  States with D(s) > mean + 2*std (0.0287): 1
+  Top-10 highest disagreement states:
+    (19, 9): D = 0.1927
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 3
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 189 cells
+F* density: 94.5%
+Max density: 15.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0035
+  Median D(s): 0.0000
+  Std D(s):    0.0203
+  Max D(s):    0.1829
+  States with D(s) > mean + 2*std (0.0441): 6
+  Top-10 highest disagreement states:
+    (19, 9): D = 0.1829
+    (19, 8): D = 0.0969
+    (19, 7): D = 0.0968
+    (18, 8): D = 0.0968
+    (18, 7): D = 0.0968
+    (18, 9): D = 0.0966
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 4
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 185 cells
+F* density: 92.5%
+Max density: 20.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0154
+  Median D(s): 0.0000
+  Std D(s):    0.0844
+  Max D(s):    0.9857
+  States with D(s) > mean + 2*std (0.1843): 4
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.9857
+    (8, 5): D = 0.3267
+    (9, 6): D = 0.3267
+    (19, 9): D = 0.3022
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 5
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 181 cells
+F* density: 90.5%
+Max density: 25.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0302
+  Median D(s): 0.0000
+  Std D(s):    0.0810
+  Max D(s):    0.7904
+  States with D(s) > mean + 2*std (0.1922): 4
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.7904
+    (8, 5): D = 0.4182
+    (9, 6): D = 0.4182
+    (19, 9): D = 0.3102
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 6
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 177 cells
+F* density: 88.5%
+Max density: 30.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0364
+  Median D(s): 0.0000
+  Std D(s):    0.0805
+  Max D(s):    0.6597
+  States with D(s) > mean + 2*std (0.1973): 5
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.6597
+    (8, 5): D = 0.4356
+    (9, 6): D = 0.4356
+    (19, 9): D = 0.2887
+    (19, 7): D = 0.2230
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 7
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 173 cells
+F* density: 86.5%
+Max density: 35.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0363
+  Median D(s): 0.0000
+  Std D(s):    0.0772
+  Max D(s):    0.5660
+  States with D(s) > mean + 2*std (0.1906): 5
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.5660
+    (9, 6): D = 0.4267
+    (8, 5): D = 0.4267
+    (19, 9): D = 0.2735
+    (19, 7): D = 0.1923
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 8
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 169 cells
+F* density: 84.5%
+Max density: 40.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0390
+  Median D(s): 0.0000
+  Std D(s):    0.0812
+  Max D(s):    0.4955
+  States with D(s) > mean + 2*std (0.2014): 5
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.4955
+    (9, 5): D = 0.4832
+    (8, 5): D = 0.4084
+    (9, 6): D = 0.4084
+    (19, 9): D = 0.2491
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 9
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 165 cells
+F* density: 82.5%
+Max density: 45.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0383
+  Median D(s): 0.0000
+  Std D(s):    0.0766
+  Max D(s):    0.4408
+  States with D(s) > mean + 2*std (0.1914): 5
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.4408
+    (9, 5): D = 0.4297
+    (8, 5): D = 0.3872
+    (9, 6): D = 0.3872
+    (19, 9): D = 0.2359
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 10
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 161 cells
+F* density: 80.5%
+Max density: 50.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0418
+  Median D(s): 0.0000
+  Std D(s):    0.0897
+  Max D(s):    0.6223
+  States with D(s) > mean + 2*std (0.2213): 6
+  Top-10 highest disagreement states:
+    (19, 8): D = 0.6223
+    (19, 7): D = 0.5302
+    (9, 5): D = 0.3869
+    (8, 5): D = 0.3659
+    (9, 6): D = 0.3659
+    (19, 9): D = 0.2259
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (0, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [24.42 24.42 24.09 24.09]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 11
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 157 cells
+F* density: 78.5%
+Max density: 55.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0523
+  Median D(s): 0.0000
+  Std D(s):    0.1361
+  Max D(s):    1.3586
+  States with D(s) > mean + 2*std (0.3246): 5
+  Top-10 highest disagreement states:
+    (19, 7): D = 1.3586
+    (19, 8): D = 0.7432
+    (8, 5): D = 0.4032
+    (9, 5): D = 0.3525
+    (9, 6): D = 0.3456
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (5, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [26.07 26.07 25.74 25.41]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 12
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 153 cells
+F* density: 76.5%
+Max density: 60.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0580
+  Median D(s): 0.0000
+  Std D(s):    0.1305
+  Max D(s):    1.2601
+  States with D(s) > mean + 2*std (0.3191): 5
+  Top-10 highest disagreement states:
+    (19, 7): D = 1.2601
+    (19, 8): D = 0.6900
+    (8, 5): D = 0.4235
+    (9, 6): D = 0.3267
+    (9, 5): D = 0.3238
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (5, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [26.07 26.07 25.74 25.41]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 13
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 149 cells
+F* density: 74.5%
+Max density: 65.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0783
+  Median D(s): 0.0309
+  Std D(s):    0.1811
+  Max D(s):    1.7411
+  States with D(s) > mean + 2*std (0.4404): 2
+  Top-10 highest disagreement states:
+    (19, 8): D = 1.7411
+    (19, 7): D = 1.1740
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (5, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [26.07 26.07 25.74 25.41]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 14
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 145 cells
+F* density: 72.5%
+Max density: 70.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.0858
+  Median D(s): 0.0533
+  Std D(s):    0.1776
+  Max D(s):    1.6412
+  States with D(s) > mean + 2*std (0.4409): 2
+  Top-10 highest disagreement states:
+    (19, 8): D = 1.6412
+    (19, 7): D = 1.0994
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = 0.000000
+  Interpretation: MARGINAL (zero margin at bottleneck)
+  Best path length: 29 steps
+  Bottleneck state: (5, 9) (margin = 0.000000)
+  Bottleneck Q_mix: [26.07 26.07 25.74 25.41]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 15
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 141 cells
+F* density: 70.5%
+Max density: 75.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.1061
+  Median D(s): 0.0503
+  Std D(s):    0.3229
+  Max D(s):    3.2670
+  States with D(s) > mean + 2*std (0.7518): 2
+  Top-10 highest disagreement states:
+    (19, 7): D = 3.2670
+    (19, 8): D = 1.9464
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = -1.000000
+  Interpretation: FREE INFERENCE FAILS (negative margin)
+  Best path length: 33 steps
+  Bottleneck state: (17, 2) (margin = -1.000000)
+  Bottleneck Q_mix: [32.076  5.544 31.68  18.48 ]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 16
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 137 cells
+F* density: 68.5%
+Max density: 80.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.1175
+  Median D(s): 0.0817
+  Std D(s):    0.3125
+  Max D(s):    3.1219
+  States with D(s) > mean + 2*std (0.7425): 2
+  Top-10 highest disagreement states:
+    (19, 7): D = 3.1219
+    (19, 8): D = 1.8571
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = -1.000000
+  Interpretation: FREE INFERENCE FAILS (negative margin)
+  Best path length: 33 steps
+  Bottleneck state: (17, 2) (margin = -1.000000)
+  Bottleneck Q_mix: [32.01      5.094375 31.68     17.221875]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 17
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 133 cells
+F* density: 66.5%
+Max density: 85.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.1221
+  Median D(s): 0.0784
+  Std D(s):    0.3042
+  Max D(s):    2.9746
+  States with D(s) > mean + 2*std (0.7304): 2
+  Top-10 highest disagreement states:
+    (19, 7): D = 2.9746
+    (19, 8): D = 1.7752
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = -1.000000
+  Interpretation: FREE INFERENCE FAILS (negative margin)
+  Best path length: 55 steps
+  Bottleneck state: (7, 8) (margin = -1.000000)
+  Bottleneck Q_mix: [26.67176471 20.86764706 26.16705882 14.55882353]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 18
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 129 cells
+F* density: 64.5%
+Max density: 90.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.1326
+  Median D(s): 0.0753
+  Std D(s):    0.2940
+  Max D(s):    2.8093
+  States with D(s) > mean + 2*std (0.7206): 2
+  Top-10 highest disagreement states:
+    (19, 7): D = 2.8093
+    (19, 8): D = 1.6992
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = -1.000000
+  Interpretation: FREE INFERENCE FAILS (negative margin)
+  Best path length: 53 steps
+  Bottleneck state: (7, 8) (margin = -1.000000)
+  Bottleneck Q_mix: [26.54666667 19.25       26.10666667 13.29166667]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 19
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 125 cells
+F* density: 62.5%
+Max density: 95.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.1359
+  Median D(s): 0.0724
+  Std D(s):    0.2881
+  Max D(s):    2.7005
+  States with D(s) > mean + 2*std (0.7121): 2
+  Top-10 highest disagreement states:
+    (19, 7): D = 2.7005
+    (19, 8): D = 1.6282
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = -1.000000
+  Interpretation: FREE INFERENCE FAILS (negative margin)
+  Best path length: 37 steps
+  Bottleneck state: (7, 8) (margin = -1.000000)
+  Bottleneck Q_mix: [26.43473684 17.80263158 26.05263158 12.15789474]
+======================================================================
+
+======================================================================
+NAVIGATIONAL COHERENCE ANALYSIS
+======================================================================
+
+Grid: 20 x 10 = 200 cells
+Number of environments: 20
+Start: (0, 9), Goal: (19, 0)
+Consensus free space |F*|: 121 cells
+F* density: 60.5%
+Max density: 100.0%
+
+--- Q-Value Disagreement D(s) ---
+  Mean D(s):   0.1455
+  Median D(s): 0.0820
+  Std D(s):    0.2731
+  Max D(s):    2.5966
+  States with D(s) > mean + 2*std (0.6917): 2
+  Top-10 highest disagreement states:
+    (19, 7): D = 2.5966
+    (19, 8): D = 1.2783
+
+--- Navigational Coherence Score C(V) ---
+  C(V) = -1.000000
+  Interpretation: FREE INFERENCE FAILS (negative margin)
+  Best path length: 37 steps
+  Bottleneck state: (7, 8) (margin = -1.000000)
+  Bottleneck Q_mix: [26.334  16.5    26.004  11.1375]
+======================================================================

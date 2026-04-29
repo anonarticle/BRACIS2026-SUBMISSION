@@ -1,0 +1,52 @@
+
+Saving print output to:
+output.txt
+	1	
+mode=thompson, greedy=True
+Random-Maze-0.05-20x10 env.start_state=(0, 9)
+Random-Maze-0.1-20x10 env.start_state=(0, 9)
+Random-Maze-0.15-20x10 env.start_state=(0, 9)
+Random-Maze-0.2-20x10 env.start_state=(0, 9)
+Random-Maze-0.25-20x10 env.start_state=(0, 9)
+Random-Maze-0.3-20x10 env.start_state=(0, 9)
+Random-Maze-0.35-20x10 env.start_state=(0, 9)
+Random-Maze-0.4-20x10 env.start_state=(0, 9)
+Random-Maze-0.45-20x10 env.start_state=(0, 9)
+Random-Maze-0.5-20x10 env.start_state=(0, 9)
+Random-Maze-0.55-20x10 env.start_state=(0, 9)
+Random-Maze-0.6-20x10 env.start_state=(0, 9)
+Random-Maze-0.65-20x10 env.start_state=(0, 9)
+Random-Maze-0.7-20x10 env.start_state=(0, 9)
+Random-Maze-0.75-20x10 env.start_state=(0, 9)
+Random-Maze-0.8-20x10 env.start_state=(0, 9)
+Random-Maze-0.85-20x10 env.start_state=(0, 9)
+Random-Maze-0.9-20x10 env.start_state=(0, 9)
+Random-Maze-0.95-20x10 env.start_state=(0, 9)
+Random-Maze-20x10 env.start_state=(0, 9)
+mode=value-mixture, greedy=True
+Random-Maze-0.05-20x10 env.start_state=(0, 9)
+Random-Maze-0.1-20x10 env.start_state=(0, 9)
+Random-Maze-0.15-20x10 env.start_state=(0, 9)
+Random-Maze-0.2-20x10 env.start_state=(0, 9)
+Random-Maze-0.25-20x10 env.start_state=(0, 9)
+Random-Maze-0.3-20x10 env.start_state=(0, 9)
+Random-Maze-0.35-20x10 env.start_state=(0, 9)
+Random-Maze-0.4-20x10 env.start_state=(0, 9)
+Random-Maze-0.45-20x10 env.start_state=(0, 9)
+Random-Maze-0.5-20x10 env.start_state=(0, 9)
+Random-Maze-0.55-20x10 env.start_state=(0, 9)
+Random-Maze-0.6-20x10 env.start_state=(0, 9)
+Random-Maze-0.65-20x10 env.start_state=(0, 9)
+Random-Maze-0.7-20x10 env.start_state=(0, 9)
+Random-Maze-0.75-20x10 env.start_state=(0, 9)
+Random-Maze-0.8-20x10 env.start_state=(0, 9)
+Random-Maze-0.85-20x10 env.start_state=(0, 9)
+Random-Maze-0.9-20x10 env.start_state=(0, 9)
+Random-Maze-0.95-20x10 env.start_state=(0, 9)
+Random-Maze-20x10 env.start_state=(0, 9)
+
+
+
+Thompson Belief trace
+
+Value-Mixture Belief trace

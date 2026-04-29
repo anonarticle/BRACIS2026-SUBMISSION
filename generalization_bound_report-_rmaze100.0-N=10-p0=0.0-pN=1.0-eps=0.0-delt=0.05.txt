@@ -1,0 +1,513 @@
+
+########################################################################
+#  Eval level k = 1
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 1  →  expected obstacles per nesting ≈ 237
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.2381  |P*| =  294  C = -0.3333  FAIL
+  [ 20/50]  ε_margin = 0.2181  |P*| =  298  C = -0.1422  FAIL
+  [ 30/50]  ε_margin = 0.3317  |P*| =  398  C = -0.3333  FAIL
+  [ 40/50]  ε_margin = 0.1866  |P*| =  268  C = -0.1422  FAIL
+  [ 50/50]  ε_margin = 0.1828  |P*| =  268  C = -0.1422  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.2181  |P*| =  298  C = -0.1422  FAIL
+  [ 20/50]  ε_margin = 0.2181  |P*| =  298  C = -0.3333  FAIL
+  [ 30/50]  ε_margin = 0.2119  |P*| =  302  C = -0.1438  FAIL
+  [ 40/50]  ε_margin = 0.3707  |P*| =  518  C = -0.1768  FAIL
+  [ 50/50]  ε_margin = 0.2980  |P*| =  302  C = -0.2893  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 1
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2332  std=0.0692  min=0.1545  max=0.4095
+  ε_margin (test):   mean=0.2471  std=0.0628  min=0.1468  max=0.3707
+  C(V) (train):      mean=-0.1990  std=0.0786  min=-0.4098  max=-0.1422
+  C(V) (test):       mean=-0.1863  std=0.0634  min=-0.3333  max=-0.1422
+  |P*| (train):      mean=307.6  std=65.7  min=244  max=512
+  |P*| (test):       mean=319.0  std=63.4  min=218  max=518
+========================================================================
+
+########################################################################
+#  Eval level k = 2
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 2  →  expected obstacles per nesting ≈ 474
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.2381  |P*| =  294  C = -0.3333  FAIL
+  [ 20/50]  ε_margin = 0.2107  |P*| =  280  C = -0.3333  FAIL
+  [ 30/50]  ε_margin = 0.2559  |P*| =  254  C = -0.3333  FAIL
+  [ 40/50]  ε_margin = 0.3485  |P*| =  330  C = -0.2079  FAIL
+  [ 50/50]  ε_margin = 0.1828  |P*| =  268  C = -0.1422  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.2437  |P*| =  316  C = -0.2832  FAIL
+  [ 20/50]  ε_margin = 0.3469  |P*| =  392  C = -0.3333  FAIL
+  [ 30/50]  ε_margin = 0.2284  |P*| =  324  C = -0.1483  FAIL
+  [ 40/50]  ε_margin = 0.1950  |P*| =  282  C = -0.2306  FAIL
+  [ 50/50]  ε_margin = 0.3358  |P*| =  268  C = -0.3581  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 2
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2434  std=0.0576  min=0.1122  max=0.3565
+  ε_margin (test):   mean=0.2542  std=0.0665  min=0.1190  max=0.3783
+  C(V) (train):      mean=-0.2509  std=0.0749  min=-0.4098  max=-0.1422
+  C(V) (test):       mean=-0.2903  std=0.1394  min=-1.0000  max=-0.1422
+  |P*| (train):      mean=290.8  std=44.4  min=196  max=418
+  |P*| (test):       mean=294.6  std=53.3  min=202  max=422
+========================================================================
+
+########################################################################
+#  Eval level k = 3
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 3  →  expected obstacles per nesting ≈ 711
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.3367  |P*| =  300  C = -0.4933  FAIL
+  [ 20/50]  ε_margin = 0.1606  |P*| =  218  C = -0.4396  FAIL
+  [ 30/50]  ε_margin = 0.2419  |P*| =  248  C = -0.4160  FAIL
+  [ 40/50]  ε_margin = 0.2926  |P*| =  270  C = -0.3893  FAIL
+  [ 50/50]  ε_margin = 0.2520  |P*| =  246  C = -0.3333  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.2126  |P*| =  254  C = -0.4396  FAIL
+  [ 20/50]  ε_margin = 0.3227  |P*| =  282  C = -0.5000  FAIL
+  [ 30/50]  ε_margin = 0.2348  |P*| =  230  C = -0.5944  FAIL
+  [ 40/50]  ε_margin = 0.1840  |P*| =  250  C = -0.3861  FAIL
+  [ 50/50]  ε_margin = 0.3323  |P*| =  316  C = -0.3939  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 3
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2408  std=0.0582  min=0.1263  max=0.3509
+  ε_margin (test):   mean=0.2488  std=0.0619  min=0.1478  max=0.3533
+  C(V) (train):      mean=-0.4047  std=0.1523  min=-1.0000  max=-0.2069
+  C(V) (test):       mean=-0.4648  std=0.1972  min=-1.0000  max=-0.2413
+  |P*| (train):      mean=256.9  std=35.2  min=196  max=342
+  |P*| (test):       mean=258.8  std=35.8  min=192  max=364
+========================================================================
+
+########################################################################
+#  Eval level k = 4
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 4  →  expected obstacles per nesting ≈ 948
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.2750  |P*| =  240  C = -0.5951  FAIL
+  [ 20/50]  ε_margin = 0.1885  |P*| =  244  C = -0.4913  FAIL
+  [ 30/50]  ε_margin = 0.2333  |P*| =  240  C = -0.7500  FAIL
+  [ 40/50]  ε_margin = 0.3222  |P*| =  270  C = -0.5174  FAIL
+  [ 50/50]  ε_margin = 0.3144  |P*| =  264  C = -0.7257  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.2136  |P*| =  206  C = -0.6627  FAIL
+  [ 20/50]  ε_margin = 0.2227  |P*| =  220  C = -0.5790  FAIL
+  [ 30/50]  ε_margin = 0.2161  |P*| =  236  C = -0.8453  FAIL
+  [ 40/50]  ε_margin = 0.2254  |P*| =  244  C = -0.6598  FAIL
+  [ 50/50]  ε_margin = 0.2103  |P*| =  214  C = -0.4872  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 4
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2415  std=0.0578  min=0.1452  max=0.3615
+  ε_margin (test):   mean=0.2380  std=0.0537  min=0.1154  max=0.3349
+  C(V) (train):      mean=-0.6457  std=0.1855  min=-1.0000  max=-0.2407
+  C(V) (test):       mean=-0.7315  std=0.2000  min=-1.0000  max=-0.3705
+  |P*| (train):      mean=231.0  std=30.8  min=186  max=340
+  |P*| (test):       mean=223.6  std=23.4  min=170  max=286
+========================================================================
+
+########################################################################
+#  Eval level k = 5
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 5  →  expected obstacles per nesting ≈ 1185
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.2626  |P*| =  198  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.3263  |P*| =  236  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.1957  |P*| =  230  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.3376  |P*| =  234  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2685  |P*| =  216  C = -0.9997  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.2765  |P*| =  170  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.1824  |P*| =  170  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.4157  |P*| =  178  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.2207  |P*| =  222  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.1559  |P*| =  186  C = -1.0000  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 5
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2377  std=0.0602  min=0.1263  max=0.3376
+  ε_margin (test):   mean=0.2297  std=0.0692  min=0.1215  max=0.4326
+  C(V) (train):      mean=-0.9504  std=0.1048  min=-1.0000  max=-0.5790
+  C(V) (test):       mean=-0.9757  std=0.0580  min=-1.0000  max=-0.7221
+  |P*| (train):      mean=200.3  std=20.7  min=156  max=242
+  |P*| (test):       mean=205.5  std=25.1  min=170  max=282
+========================================================================
+
+########################################################################
+#  Eval level k = 6
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 6  →  expected obstacles per nesting ≈ 1422
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.3137  |P*| =  204  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.1842  |P*| =  190  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.1602  |P*| =  206  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.3239  |P*| =  176  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2283  |P*| =  184  C = -1.0000  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.3000  |P*| =  170  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.2097  |P*| =  186  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.4056  |P*| =  180  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.2944  |P*| =  180  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2181  |P*| =  188  C = -1.0000  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 6
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2630  std=0.0710  min=0.1494  max=0.4375
+  ε_margin (test):   mean=0.2559  std=0.0832  min=0.1373  max=0.4468
+  C(V) (train):      mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  C(V) (test):       mean=-0.9994  std=0.0043  min=-1.0000  max=-0.9692
+  |P*| (train):      mean=189.2  std=11.0  min=166  max=214
+  |P*| (test):       mean=187.5  std=11.1  min=170  max=224
+========================================================================
+
+########################################################################
+#  Eval level k = 7
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 7  →  expected obstacles per nesting ≈ 1659
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.3220  |P*| =  236  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.2887  |P*| =  194  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.2075  |P*| =  212  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.3511  |P*| =  188  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2957  |P*| =  230  C = -1.0000  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.3000  |P*| =  170  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.2917  |P*| =  192  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.4056  |P*| =  180  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.2742  |P*| =  186  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.1950  |P*| =  200  C = -1.0000  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 7
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2895  std=0.0601  min=0.1706  max=0.4105
+  ε_margin (test):   mean=0.2879  std=0.0603  min=0.1771  max=0.4082
+  C(V) (train):      mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  C(V) (test):       mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  |P*| (train):      mean=202.0  std=15.4  min=170  max=236
+  |P*| (test):       mean=199.6  std=11.9  min=170  max=240
+========================================================================
+
+########################################################################
+#  Eval level k = 8
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 8  →  expected obstacles per nesting ≈ 1896
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.3130  |P*| =  246  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.2609  |P*| =  230  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.2773  |P*| =  220  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.1980  |P*| =  202  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2400  |P*| =  250  C = -1.0000  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.3350  |P*| =  206  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.3319  |P*| =  238  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.4708  |P*| =  240  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.3750  |P*| =  216  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.3102  |P*| =  216  C = -1.0000  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 8
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.2912  std=0.0618  min=0.1748  max=0.4206
+  ε_margin (test):   mean=0.3081  std=0.0582  min=0.1779  max=0.4708
+  C(V) (train):      mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  C(V) (test):       mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  |P*| (train):      mean=228.0  std=18.3  min=190  max=262
+  |P*| (test):       mean=224.9  std=23.4  min=194  max=308
+========================================================================
+
+########################################################################
+#  Eval level k = 9
+########################################################################
+========================================================================
+Experiment (b) v2 — Generalization Bound (Theorem 7.2)
+========================================================================
+Grid: 100×50  |  N = 10 density levels
+|C| = 2370 obstacle cells  |  start = (0, 49)  goal = (99, 0)
+|F*| (fixed family) = 2630 cells  (0.5260 of grid)
+Eval level k = 9  →  expected obstacles per nesting ≈ 2133
+m_train = 50  |  m_test = 50
+ε = 0.0  |  δ = 0.05
+
+--- Phase 1: Training (50 random nestings) ---
+  [ 10/50]  ε_margin = 0.3182  |P*| =  330  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.3111  |P*| =  270  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.3262  |P*| =  282  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.2591  |P*| =  328  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2886  |P*| =  298  C = -1.0000  FAIL
+
+  Training failure rate: p̂_train = 1.0000  (50/50)
+
+  d_FI estimate: 2370.0
+  Predicted test failure rate (basic bound):  ≤ 1.0000
+  Predicted test failure rate (sqrt bound):   ≤ 1.0000
+
+--- Phase 2: Testing (50 held-out nestings) ---
+  [ 10/50]  ε_margin = 0.2647  |P*| =  238  C = -1.0000  FAIL
+  [ 20/50]  ε_margin = 0.3114  |P*| =  228  C = -1.0000  FAIL
+  [ 30/50]  ε_margin = 0.4013  |P*| =  304  C = -1.0000  FAIL
+  [ 40/50]  ε_margin = 0.3276  |P*| =  290  C = -1.0000  FAIL
+  [ 50/50]  ε_margin = 0.2610  |P*| =  272  C = -1.0000  FAIL
+
+========================================================================
+RESULTS SUMMARY
+========================================================================
+  Grid: 100×50  |  N = 10  |  |C| = 2370  |  k = 9
+  ε threshold: 0.0  |  δ: 0.05
+
+  Training failure rate (m=50):  p̂_train = 1.0000
+  Test     failure rate (m=50):   p̂_test  = 1.0000
+
+  d_FI estimate: 2370.0
+  Bound (basic): Pr[ε_margin > ε] ≤ 1.0000
+  Bound (sqrt):  Pr[ε_margin > ε] ≤ 1.0000
+
+  Basic bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+  Sqrt  bound holds on test set?  ✓ YES  (p̂_test=1.0000 ≤ 1.0000)
+
+  ε_margin (train):  mean=0.3052  std=0.0371  min=0.2016  max=0.3700
+  ε_margin (test):   mean=0.3084  std=0.0536  min=0.1792  max=0.4022
+  C(V) (train):      mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  C(V) (test):       mean=-1.0000  std=0.0000  min=-1.0000  max=-1.0000
+  |P*| (train):      mean=279.5  std=33.8  min=216  max=372
+  |P*| (test):       mean=274.6  std=42.0  min=200  max=376
+========================================================================
