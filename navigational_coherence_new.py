@@ -536,51 +536,51 @@ def coherence_report(
         'number_of_high_disagreement_states': len(high_d_states),
     }
 
-
-wall_reward_like_cliff = True
-random_maze_only = True # False # 
-lambda_cliff = 100.0 if random_maze_only else 100.0
-default_state_len = 2
-episode_mult = 1 # 2 # 
-
-num_percs = 20
-perc0 = 0.0
-percN = 1.0       
-                
-agent_name = 'qlearning'       
-
-sizes0 = sizes
-
-random_maze_str = f'_rmaze{lambda_cliff:.1f}'
-
-suite = build_canonical_suite(sizes, random_maze_only=random_maze_only, lambda_cliff=lambda_cliff, seed=123,
-                                num_percs=num_percs, perc0=perc0, percN=percN)
-
-envs_eps = [ (env, n_episodes) for (fam, env_name, i), (env, n_episodes) in suite.items() ]
-
-envs, num_episodes_list = zip(*envs_eps)
-envs_dic = { env_name: env for (fam, env_name, i), env in suite.items() }
-
-N = len(envs)//len(sizes) 
-
-for i, env in enumerate(envs):
-    env.update_r_wall(wall_reward_like_cliff)
-    env.print_grid(print_rewards=False)
-
-random_maze_str += f"x{episode_mult}" if episode_mult > 1 else ""
-
-out_sub_dir = "/traj_self_superv"
-out_sub_dir += random_maze_str + f"-N={N}"
-if not os.path.exists(f"./logs{out_sub_dir}"):
-    os.makedirs(f"./logs{out_sub_dir}")
-traj_sub_dir = f"./logs{out_sub_dir}"
-
-qtable_sub_dir = f"/qtable_self_superv"
-qtable_sub_dir += random_maze_str  + f"-N={N}"   
-if not os.path.exists(f"./logs{qtable_sub_dir}"):
-    os.makedirs(f"./logs{qtable_sub_dir}")
-
 if __name__ == "__main__":
+
+    wall_reward_like_cliff = True
+    random_maze_only = True # False # 
+    lambda_cliff = 100.0 if random_maze_only else 100.0
+    default_state_len = 2
+    episode_mult = 1 # 2 # 
+
+    num_percs = 20
+    perc0 = 0.0
+    percN = 1.0       
+                
+    agent_name = 'qlearning'       
+
+    sizes0 = sizes
+
+    random_maze_str = f'_rmaze{lambda_cliff:.1f}'
+
+    suite = build_canonical_suite(sizes, random_maze_only=random_maze_only, lambda_cliff=lambda_cliff, seed=123,
+                                    num_percs=num_percs, perc0=perc0, percN=percN)
+
+    envs_eps = [ (env, n_episodes) for (fam, env_name, i), (env, n_episodes) in suite.items() ]
+
+    envs, num_episodes_list = zip(*envs_eps)
+    envs_dic = { env_name: env for (fam, env_name, i), env in suite.items() }
+
+    N = len(envs)//len(sizes) 
+
+    for i, env in enumerate(envs):
+        env.update_r_wall(wall_reward_like_cliff)
+        env.print_grid(print_rewards=False)
+
+    random_maze_str += f"x{episode_mult}" if episode_mult > 1 else ""
+
+    out_sub_dir = "/traj_self_superv"
+    out_sub_dir += random_maze_str + f"-N={N}"
+    if not os.path.exists(f"./logs{out_sub_dir}"):
+        os.makedirs(f"./logs{out_sub_dir}")
+    traj_sub_dir = f"./logs{out_sub_dir}"
+
+    qtable_sub_dir = f"/qtable_self_superv"
+    qtable_sub_dir += random_maze_str  + f"-N={N}"   
+    if not os.path.exists(f"./logs{qtable_sub_dir}"):
+        os.makedirs(f"./logs{qtable_sub_dir}")
+
 
     coherence_df = pd.DataFrame()
 

@@ -109,11 +109,11 @@ def print_maze(maze):
     print("".join([((" " if i < 10 else "")+str(i)) for i,c in enumerate(row)]))
 
 
-def doSeed(seed=None):
+def doSeed(seed=None, verbose=True):
     if seed is None:
         seed = int(time.time()*1000) % (2**32) 
     
-    print(seed)
+    if verbose: print(seed)
     np.random.seed(seed)
     random.seed(seed)
 
@@ -873,7 +873,7 @@ class RandomMazeFamily(BenchmarkFamily):
         self.C = C
         self.lambda_cliff = lambda_cliff
 
-    def make(self, size: SizeSpec, start=(0, -1), goal=(-1, 0), scale = -1, walls_perc = 0,  seed: int = 0) -> GridWorldPlus:
+    def make(self, size: SizeSpec, start=(0, -1), goal=(-1, 0), scale = -1, walls_perc = 0,  seed: int = 0, verbose = True) -> GridWorldPlus:
         w, h = size.width, size.height
         rng = random.Random(seed)
         start = (start[0] if start[0] >= 0 else w+start[0], 
@@ -884,7 +884,7 @@ class RandomMazeFamily(BenchmarkFamily):
         walls = set()
 
         seed = 1928578606
-        seed=doSeed(seed)
+        seed=doSeed(seed, verbose=verbose)
 
         scale = max(1, int(w // 20)) if scale <= 0 else scale
         
@@ -916,7 +916,7 @@ class RandomMazeFamily(BenchmarkFamily):
         # walls.update([(6, 7)]) # test to force an island
 
         islands = find_unreachable_clusters(w, h, walls, goal)
-        if islands:
+        if islands and verbose:
             for i, island in enumerate(islands[:], start=1):
                 print(f"Island {i}: size={len(island)}, sample={island[:]}")
 
@@ -1110,7 +1110,8 @@ def build_canonical_suite(
     seed: int = 0,
     num_percs = 10,
     perc0 = 0.0,
-    percN = 1.0,    
+    percN = 1.0,
+    verbose=True,    
 ) -> Dict[Tuple[str, str], Any]:
     """
     Returns dict[(family_name, env_name)] -> env_instance
@@ -1129,8 +1130,8 @@ def build_canonical_suite(
             for i in range(num_percs):
                 perc = ((i+1) / num_percs)
                 if perc0 <= perc <= percN:
-                    print( i, eps, fam.family_name )
-                    env = fam.make(size=size, scale=1, walls_perc=perc, seed=seed)
+                    if verbose: print( i, eps, fam.family_name )
+                    env = fam.make(size=size, scale=1, walls_perc=perc, seed=seed, verbose=verbose)
                     suite[(fam.family_name, env.name, i)] = (env, eps)     
      
     else:
@@ -1151,7 +1152,7 @@ def build_canonical_suite(
         for (w, h) in sizes:
             size = SizeSpec(w, h)
             for i, (fam, eps) in enumerate(families):
-                print( i, eps, fam.family_name )
+                if verbose: print( i, eps, fam.family_name )
                 env = fam.make(size=size, seed=seed)
                 suite[(fam.family_name, env.name, i)] = (env, eps)
 

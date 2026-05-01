@@ -386,25 +386,25 @@ def build_trajectories_from_saved_Q_table(sizes):
                                             force_from_start=extract_trajectories_from_start_only)
             df2.to_csv(demo_path2,index=False)
 
-# --- 5) Demonstration on a 4×4 grid ---
+
+all_sizes = [(10, 5), (20, 10), (40, 20), (60,30), (80, 40), (100, 50)]
+
+sizes = [(10, 5), (20, 10), (40, 20), (60,30), (80, 40), (100, 50)]
+sizes = [(20, 10), (40, 20), (60,30), (80, 40), (100, 50)]
+sizes = [(40, 20), (60,30), (80, 40), (100, 50)]
+sizes = [(60,30), (80, 40), (100, 50)]
+sizes = [(80, 40), (100, 50)]
+sizes = [(100, 50)]
+# sizes = [(10, 5)]
+sizes = [(20, 10)]
+# sizes = [(40, 20)]
+# sizes = [(60,30)]
+# sizes = [(80, 40)]
+# sizes = [(100, 50)]     
+
 if __name__ == "__main__":
     OUTPUT_DIR = './logs/'
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
-
-    all_sizes = [(10, 5), (20, 10), (40, 20), (60,30), (80, 40), (100, 50)]
-
-    sizes = [(10, 5), (20, 10), (40, 20), (60,30), (80, 40), (100, 50)]
-    sizes = [(20, 10), (40, 20), (60,30), (80, 40), (100, 50)]
-    sizes = [(40, 20), (60,30), (80, 40), (100, 50)]
-    sizes = [(60,30), (80, 40), (100, 50)]
-    sizes = [(80, 40), (100, 50)]
-    sizes = [(100, 50)]
-    # sizes = [(10, 5)]
-    sizes = [(20, 10)]
-    # sizes = [(40, 20)]
-    # sizes = [(60,30)]
-    # sizes = [(80, 40)]
-    # sizes = [(100, 50)]     
 
     build_trajectories_from_saved_Q_table(sizes)
