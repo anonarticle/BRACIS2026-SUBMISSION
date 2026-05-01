@@ -6,7 +6,7 @@ In order to reproduce article results, please perform the following steps in the
 4. Run MultiEnv_gridworld_online_mixture_of_experts.ipynb multiple times, once for each grid size!
 5. Calc Navigation Coherence score with navigational_coherence_new.py
 6. Test generalization bound with experiment_b_generalization_bound_v2.py
-
+7. Test phase transition with experiment_c_phase_transition_v2.py
 
 In order to change which grid sizes to use, go to the end of file Q_learning_Agent_plus_plus.py and choose the desired grid sizes.
 
